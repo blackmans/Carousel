@@ -5,24 +5,33 @@
  * @version 0.0.1
  */
 /*
+名称：图片轮播组件
+
 参数：
 	元素节点：node
+	每次左右移动的距离：width
+	每次上下移动的距离：height
+	图片轮播的时间间隔：interval
+
 方法：
 	是否自动播放：autoPlay();
 	
 */
-function Slider(opts){
+function Carousel(opts){
 	this.options = TOOLS.extend({
 		node: ''
-	}, opts);
+	}, opts || {});
 }
 
 
-Slider.prototype = {
-	constructor: Slider,
+Carousel.prototype = {
+	constructor: Carousel,
 	init: function(){},
 	initDom: function(),
-	render: function(){}
+	render: function(){
+		
+	},
+
 }
 
 var TOOLS = {
