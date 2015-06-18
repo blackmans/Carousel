@@ -17,6 +17,16 @@
 			<li></li>
 			<li></li>
 		</ul>
+		<span class="next"></span>
+		<span class="previous"></span>
 	</div>
+	<script src="../scripts/Carousel.js"></script>
+	<script>
+	var carousel = new Carousel({
+		node: 'carousel',
+		imgNode: 'carousel_img',
+		btnNode: 'carousel_btn'
+	}).init();
+	</script>
 </body>
 </html>
